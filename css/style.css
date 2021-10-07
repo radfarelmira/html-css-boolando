@@ -15,39 +15,25 @@ body{
     width: 80%;
     margin: auto;
 
-    /* TEST */
-    background-color: rosybrown;
-    height: 600px;
 }
 
 .row{
     text-align: center;
-    margin: 40px 0;
+    margin-top: 20px;
 
-    /* TEST */
-    width: 100%;
-    background-color: salmon;
-   
 }
 
 /* PRODUCTS */
 .product{
-    width: 32%;
+    width: 30%;
     display: inline-block;
     margin: auto;
-
-    /* TEST */
-    background-color: seagreen;
-    
 }
 
 /* Products images section */
 
 .img-container{
     position: relative;
-
-    /* TEST */
-    background-color: skyblue;
     
 }
 
@@ -95,6 +81,11 @@ body{
     background-color:#00875a;
 }
 
+.tag-sustainability-esprit{
+    left: 0;
+    background-color:#00875a;
+}
+
 /* Products text section */
 
 .text-container{
@@ -102,9 +93,6 @@ body{
     text-align: left;
     font-size: 12px;
     padding:0 5px;
-
-     /* TEST */
-     background-color: tan;
 }
 
 .price{
