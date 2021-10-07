@@ -5,3 +5,121 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+    /* TEST */
+    background-color: rosybrown;
+    height: 600px;
+}
+
+.row{
+    text-align: center;
+    margin: 40px 0;
+
+    /* TEST */
+    width: 100%;
+    background-color: salmon;
+   
+}
+
+/* PRODUCTS */
+.product{
+    width: 32%;
+    display: inline-block;
+    margin: auto;
+
+    /* TEST */
+    background-color: seagreen;
+    
+}
+
+/* Products images section */
+
+.img-container{
+    position: relative;
+
+    /* TEST */
+    background-color: skyblue;
+    
+}
+
+.img-container, .img-over, .img-hide{
+    width: 100%;
+}
+
+.img-hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.img-container:hover .img-hide{
+    display: inline-block;
+}
+
+.heart{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: white;
+    padding:0 6px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.tag{
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    padding: 3px;
+}
+
+.tag-discount{
+    left: 0;
+    background-color:#eb0037 ;
+}
+
+.tag-sustainability{ 
+    left: 36px; 
+    background-color:#00875a;
+}
+
+/* Products text section */
+
+.text-container{
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    padding:0 5px;
+
+     /* TEST */
+     background-color: tan;
+}
+
+.price{
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.price-red{
+    color: red;
+}
+ .price-through-line{
+     text-decoration-line: line-through;
+ }
+
+.price-red::after, .price-through-line:after{
+    content: '€';
+}
+
