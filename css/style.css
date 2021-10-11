@@ -1,113 +1,90 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* COMMON */
-body{
-    font-family: Arial, Helvetica, sans-serif;
-
+body {
+    font-family: sans-serif;
 }
 
-.container{
-    width: 80%;
-    margin: 40px auto;
-
-}
-
-.row{
-    text-align: center;
-    margin-top: 20px;
-
-}
-
-/* PRODUCTS */
-.product{
-    width: 30%;
-    display: inline-block;
+.container {
+    width: 75%;
     margin: auto;
 }
 
-/* Products images section */
-
-.img-container{
-    position: relative;
-    
-}
-
-.img-container, .img-over, .img-hide{
+img {
     width: 100%;
 }
 
-.img-hide{
-    position: absolute;
-    top: 0;
-    left: 0;
+/* MAIN */
+main {
+    padding: 40px 0;
+}
+.row {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Single product */
+.product {
+    display: inline-block;
+    width: 31%;
+    padding: 10px;
+}
+.product-img {
+    position: relative;
+}
+.second-image {
     display: none;
 }
-
-.img-container:hover .img-hide{
+.product-img:hover {
+    cursor: pointer;
+}
+.product-img:hover .first-image {
+    display: none;
+}
+.product-img:hover .second-image {
     display: inline-block;
 }
-
-.heart{
+.product-img .heart {
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 0;
+    font-size: 30px;
     background-color: white;
-    padding:0 6px;
-    font-size: 16px;
-    font-weight: 900;
+    padding: 7px 13px;
 }
-
-.tag{
+.product-img .tags {
     position: absolute;
-    bottom: 20px;
-    font-size: 12px;
-    font-weight: 600;
+    bottom: 30px;
+    left: 0;
     color: white;
+}
+.tags .discount {
+    background-color: red;
     padding: 3px;
 }
-
-.tag-discount{
-    left: 0;
-    background-color:#eb0037 ;
+.tags .category {
+    background-color: green;
+    padding: 3px;
 }
-
-.tag-sustainability{ 
-    left: 36px; 
-    background-color:#00875a;
-}
-
-.tag-sustainability-esprit{
-    left: 0;
-    background-color:#00875a;
-}
-
-/* Products text section */
-
-.text-container{
-    width: 100%;
+.product-description {
     text-align: left;
-    font-size: 12px;
-    padding:0 5px;
 }
-
-.price{
-    font-size: 10px;
-    font-weight: 800;
+.product-description .name {
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-
-.price-red{
+.prices {
+    font-weight: bold;
+}
+.current-price {
     color: red;
 }
- .price-through-line{
-     text-decoration-line: line-through;
- }
-
-.price-red::after, .price-through-line:after{
-    content: '€';
+.original-price {
+    text-decoration: line-through;
 }
-
